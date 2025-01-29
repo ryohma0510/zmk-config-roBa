@@ -30,6 +30,16 @@
             bindings = <&single_quotes>;
             key-positions = <7 8>;
         };
+
+        double_quotes {
+            bindings = <&double_quotes>;
+            key-positions = <19 20>;
+        };
+
+        back_quotes {
+            bindings = <&back_quotes>;
+            key-positions = <31 32>;
+        };
     };
 
     macros {
@@ -52,6 +62,20 @@
             #binding-cells = <0>;
             bindings = <&kp SQT &kp SQT>;
             label = "SINGLE_QUOTES";
+        };
+
+        double_quotes: double_quotes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES>;
+            label = "DOUBLE_QUOTES";
+        };
+
+        back_quotes: back_quotes {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp GRAVE>;
+            label = "BACK_QUOTES";
         };
     };
 
