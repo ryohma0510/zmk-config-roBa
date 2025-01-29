@@ -77,6 +77,27 @@
             bindings = <&kp GRAVE &kp GRAVE>;
             label = "BACK_QUOTES";
         };
+
+        braces: braces {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE>;
+            label = "BRACES";
+        };
+
+        parenthesis: parthens {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
+            label = "PARTHENS";
+        };
+
+        lgts: lgts {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN &kp GREATER_THAN>;
+            label = "LGTS";
+        };
     };
 
     behaviors {
