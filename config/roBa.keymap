@@ -61,7 +61,7 @@
             bindings = <
 &kp Q      &kp W         &kp E             &kp R                        &kp T                                                          &kp Y        &kp U  &kp I     &kp O     &kp P
 &kp A      &kp S         &kp D             &kp F                        &kp G        &kp LEFT_SHIFT                     &kp MINUS      &kp H        &kp J  &kp K     &kp L     &kp SQT
-&kp Z      &kp X         &kp C             &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &mkp MB1  &mkp MB3  &mkp MB2
+&kp Z      &kp X         &kp C             &kp V                        &kp B        &brackets                          &kp SEMICOLON  &kp N        &kp M  &mkp MB1  &mkp MB3  &mkp MB2
 &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
