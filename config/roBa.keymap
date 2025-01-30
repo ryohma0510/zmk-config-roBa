@@ -43,22 +43,22 @@
 
         brackets {
             bindings = <&brackets>;
-            key-positions = <22 23>;
+            key-positions = <23 24>;
         };
 
         parenthesis {
             bindings = <&parenthesis>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
         };
 
         braces {
             bindings = <&braces>;
-            key-positions = <10 11>;
+            key-positions = <11 12>;
         };
 
         lgts {
             bindings = <&lgts>;
-            key-positions = <34 35>;
+            key-positions = <35 36>;
         };
     };
 
