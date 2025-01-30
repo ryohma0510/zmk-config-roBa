@@ -156,10 +156,10 @@
 
         SYM {
             bindings = <
-&kp QUESTION  &trans    &kp EXCL   &trans    &kp TILDE                         &trans    &trans  &trans  &trans  &kp PRCNT
-&kp AT        &kp HASH  &kp DLLR   &trans    &trans     &trans         &trans  &trans    &trans  &trans  &trans  &trans
-&trans        &trans    &kp CARET  &kp PIPE  &kp BSLH   &trans         &trans  &kp AMPS  &trans  &trans  &trans  &trans
-&trans        &trans    &trans     &trans    &trans     &kp ENTER      &trans  &trans                            &trans
+&kp QUESTION  &trans    &kp EXCL   &trans  &kp TILDE                         &trans    &trans     &trans    &trans         &kp PRCNT
+&kp AT        &kp HASH  &kp DLLR   &trans  &trans     &trans         &trans  &trans    &kp SLASH  &kp PIPE  &kp BACKSLASH  &trans
+&trans        &trans    &kp CARET  &trans  &trans     &trans         &trans  &kp AMPS  &trans     &trans    &trans         &trans
+&trans        &trans    &trans     &trans  &trans     &kp ENTER      &trans  &trans                                        &trans
             >;
         };
 
