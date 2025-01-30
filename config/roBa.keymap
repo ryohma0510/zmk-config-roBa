@@ -18,7 +18,7 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <2 3>;
+            key-positions = <2 1>;
         };
 
         esc {
@@ -43,22 +43,22 @@
 
         brackets {
             bindings = <&brackets>;
-            key-positions = <23 24>;
+            key-positions = <24 25>;
         };
 
         parenthesis {
             bindings = <&parenthesis>;
-            key-positions = <1 2>;
+            key-positions = <2 3>;
         };
 
         braces {
             bindings = <&braces>;
-            key-positions = <11 12>;
+            key-positions = <12 13>;
         };
 
         lgts {
             bindings = <&lgts>;
-            key-positions = <35 36>;
+            key-positions = <36 37>;
         };
     };
 
