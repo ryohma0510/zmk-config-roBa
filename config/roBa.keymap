@@ -18,12 +18,12 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 10>;
+            key-positions = <0 1>;
         };
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <1 0>;
+            key-positions = <8 9>;
         };
 
         single_quotes {
