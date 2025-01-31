@@ -147,19 +147,19 @@
 
         NUM {
             bindings = <
-&kp KP_MULTIPLY  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS                           &trans  &trans  &trans  &trans  &trans
-&kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL  &kp KP_DOT      &trans  &trans  &trans  &trans  &trans  &trans
-&trans           &trans           &trans           &trans           &trans        &trans          &trans  &trans                          &trans
+&kp KP_MULTIPLY  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS  &trans          &trans  &trans        &trans        &trans        &trans        &trans
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL  &kp KP_DOT      &trans  &trans        &trans        &trans        &trans        &trans
+&trans           &trans           &trans           &trans           &trans        &trans          &trans  &trans                                                  &bt BT_CLR
             >;
         };
 
         SYM {
             bindings = <
-&kp QUESTION  &trans    &kp EXCL   &trans  &kp TILDE                         &trans    &trans     &trans    &trans         &kp PRCNT
-&kp AT        &kp HASH  &kp DLLR   &trans  &trans     &trans         &trans  &trans    &kp SLASH  &kp PIPE  &kp BACKSLASH  &trans
-&trans        &trans    &kp CARET  &trans  &trans     &trans         &trans  &kp AMPS  &trans     &trans    &trans         &trans
-&trans        &trans    &trans     &trans  &trans     &kp ENTER      &trans  &trans                                        &trans
+&kp QUESTION  &trans    &kp EXCL   &trans  &kp TILDE                      &trans    &trans     &trans    &trans         &kp PRCNT
+&kp AT        &kp HASH  &kp DLLR   &trans  &trans     &trans      &trans  &trans    &kp SLASH  &kp PIPE  &kp BACKSLASH  &trans
+&trans        &trans    &kp CARET  &trans  &trans     &trans      &trans  &kp AMPS  &trans     &trans    &trans         &trans
+&trans        &trans    &trans     &trans  &trans     &trans      &trans  &trans                                        &trans
             >;
         };
 
