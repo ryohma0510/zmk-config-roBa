@@ -122,7 +122,7 @@
         cmd_space: cmd_space {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp SPACE>;
+            bindings = <&kp LG(SPACE)>;
             label = "CMD_SPACE";
         };
     };
