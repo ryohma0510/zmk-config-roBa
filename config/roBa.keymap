@@ -43,7 +43,7 @@
 
         brackets {
             bindings = <&brackets>;
-            key-positions = <24 25>;
+            key-positions = <12 13>;
             layers = <0>;
         };
 
@@ -54,7 +54,7 @@
 
         braces {
             bindings = <&braces>;
-            key-positions = <12 13>;
+            key-positions = <24 25>;
         };
 
         lgts {
@@ -63,8 +63,8 @@
         };
 
         bracket {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <25 24>;
+            bindings = <&bracket>;
+            key-positions = <12 13>;
             layers = <2>;
         };
     };
@@ -131,6 +131,13 @@
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE)>;
             label = "CMD_SPACE";
+        };
+
+        bracket: bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG2 &kp LEFT_BRACKET>;
+            label = "BRACKET";
         };
     };
 
