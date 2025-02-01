@@ -44,6 +44,7 @@
         brackets {
             bindings = <&brackets>;
             key-positions = <24 25>;
+            layers = <0>;
         };
 
         parenthesis {
