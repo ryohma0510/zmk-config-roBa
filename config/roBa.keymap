@@ -26,18 +26,18 @@
             key-positions = <8 9>;
         };
 
-        single_quotes {
-            bindings = <&single_quotes>;
+        single_quote {
+            bindings = <&kp SINGLE_QUOTE>;
             key-positions = <7 8>;
         };
 
-        double_quotes {
-            bindings = <&double_quotes>;
+        double_quote {
+            bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <19 20>;
         };
 
-        back_quotes {
-            bindings = <&back_quotes>;
+        back_quote {
+            bindings = <&kp GRAVE>;
             key-positions = <31 32>;
         };
 
@@ -82,27 +82,6 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;
             label = "BRACKETS";
-        };
-
-        single_quotes: single_quotes {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SQT &kp SQT>;
-            label = "SINGLE_QUOTES";
-        };
-
-        double_quotes: double_quotes {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES &kp DOUBLE_QUOTES>;
-            label = "DOUBLE_QUOTES";
-        };
-
-        back_quotes: back_quotes {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp GRAVE>;
-            label = "BACK_QUOTES";
         };
 
         braces: braces {
