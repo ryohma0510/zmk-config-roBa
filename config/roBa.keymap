@@ -60,6 +60,12 @@
             bindings = <&lgts>;
             key-positions = <36 37>;
         };
+
+        bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <25 24>;
+            layers = <2>;
+        };
     };
 
     macros {
