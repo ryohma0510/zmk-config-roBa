@@ -19,12 +19,12 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <0 1>;
+            key-positions = <10 11>;
         };
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <8 9>;
+            key-positions = <0 1>;
         };
 
         single_quote {
