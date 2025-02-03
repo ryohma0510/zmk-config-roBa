@@ -132,10 +132,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W   &kp E         &kp R                   &kp T                                   &kp Y        &kp U  &kp I      &kp O       &kp P
-&mt LCTRL A       &kp S   &kp D         &kp F                   &kp G  &kp TAB          &msc SCRL_DOWN  &kp H        &kp J  &kp K      &kp L       &mt RCTRL MINUS
-&mt LEFT_SHIFT Z  &kp X   &kp C         &kp V                   &kp B  &cmd_space       &msc SCRL_UP    &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SEMICOLON
-&trans            &trans  &kp LEFT_ALT  &mt LEFT_COMMAND LANG2  &mo 2  &lt 3 SPACE      &mo 1           &lt 3 LANG1                                &trans
+&kp Q             &kp W   &kp E         &kp R                   &kp T                          &kp Y        &kp U  &kp I      &kp O       &kp P
+&mt LCTRL A       &kp S   &kp D         &kp F                   &kp G  &kp TAB          &none  &kp H        &kp J  &kp K      &kp L       &mt RCTRL MINUS
+&mt LEFT_SHIFT Z  &kp X   &kp C         &kp V                   &kp B  &cmd_space       &none  &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SEMICOLON
+&trans            &trans  &kp LEFT_ALT  &mt LEFT_COMMAND LANG2  &mo 2  &lt 3 SPACE      &mo 1  &lt 3 LANG1                                &trans
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -161,10 +161,10 @@
 
         ARROW {
             bindings = <
-&trans  &trans    &trans    &trans     &trans                                    &trans         &trans    &trans    &trans     &trans
-&trans  &kp LEFT  &kp UP    &kp RIGHT  &trans  &trans         &kp C_VOLUME_UP    &kp BACKSPACE  &kp LEFT  &kp UP    &kp RIGHT  &trans
-&trans  &trans    &kp DOWN  &trans     &trans  &trans         &kp C_VOLUME_DOWN  &trans         &trans    &kp DOWN  &trans     &trans
-&trans  &trans    &trans    &trans     &trans  &kp ENTER      &trans             &trans                                        &trans
+&trans  &trans    &trans    &trans     &trans                                         &trans         &trans    &trans    &trans     &trans
+&trans  &kp LEFT  &kp UP    &kp RIGHT  &trans  &msc SCRL_DOWN      &kp C_VOLUME_UP    &kp BACKSPACE  &kp LEFT  &kp UP    &kp RIGHT  &trans
+&trans  &trans    &kp DOWN  &trans     &trans  &msc SCRL_UP        &kp C_VOLUME_DOWN  &trans         &trans    &kp DOWN  &trans     &trans
+&trans  &trans    &trans    &trans     &trans  &kp ENTER           &trans             &trans                                        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
