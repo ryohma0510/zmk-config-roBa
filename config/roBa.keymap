@@ -19,54 +19,60 @@
 
         esc {
             bindings = <&kp ESC>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
         };
 
         single_quote {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <7 8>;
+            layers = <2>;
         };
 
         double_quote {
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <19 20>;
+            layers = <2>;
         };
 
         back_quote {
             bindings = <&kp GRAVE>;
             key-positions = <31 32>;
+            layers = <2>;
         };
 
         brackets {
             bindings = <&brackets>;
             key-positions = <12 11>;
-            layers = <0>;
+            layers = <2>;
         };
 
         parenthesis {
             bindings = <&parenthesis>;
             key-positions = <2 1>;
+            layers = <2>;
         };
 
         braces {
             bindings = <&braces>;
             key-positions = <24 23>;
+            layers = <2>;
         };
 
         lgts {
             bindings = <&lgts>;
             key-positions = <36 35>;
+            layers = <2>;
         };
 
         bracket {
             bindings = <&bracket>;
-            key-positions = <12 11>;
+            key-positions = <11 10>;
             layers = <2>;
         };
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <10 11>;
+            key-positions = <11 12>;
         };
     };
 
