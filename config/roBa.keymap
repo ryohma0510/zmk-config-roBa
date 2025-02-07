@@ -126,6 +126,13 @@
             bindings = <&kp LANG2 &kp LEFT_BRACKET>;
             label = "BRACKET";
         };
+
+        screenshot: screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LG(NUMBER_4))>;
+            label = "SCREENSHOT";
+        };
     };
 
     behaviors {
@@ -147,7 +154,7 @@
 &kp Q             &kp W   &kp E         &kp R                   &kp T                                  &kp Y        &kp U  &kp I      &kp O       &kp P
 &mt LCTRL A       &kp S   &kp D         &kp F                   &kp G  &msc SCRL_DOWN      &cmd_space  &kp H        &kp J  &kp K      &kp L       &mt RCTRL MINUS
 &mt LEFT_SHIFT Z  &kp X   &kp C         &kp V                   &kp B  &msc SCRL_UP        &none       &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SEMICOLON
-&trans            &trans  &kp LEFT_ALT  &mt LEFT_COMMAND LANG2  &mo 2  &lt 3 SPACE         &mo 1       &lt 3 LANG1                                &trans
+&trans            &trans  &kp LEFT_ALT  &mt LEFT_COMMAND LANG2  &mo 2  &lt 3 SPACE         &mo 1       &lt 3 LANG1                                &screenshot
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
