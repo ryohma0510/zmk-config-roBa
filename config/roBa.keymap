@@ -2,7 +2,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 4
 #define SCROLL 5
@@ -176,7 +175,7 @@
         default_layer {
             bindings = <
 &kp Q             &kp W   &kp E         &kp R                   &kp T                                  &kp Y        &kp U  &kp I      &kp O       &kp P
-&mt LCTRL A       &kp S   &kp D         &kp F                   &kp G  &msc SCRL_DOWN      &cmd_space  &kp H        &kp J  &kp K      &kp L       &mt RCTRL MINUS
+&mt LCTRL A       &kp S   &kp D         &kp F                   &kp G  &msc SCRL_DOWN      &cmd_space  &kp H        &kp J  &lt 4 K    &lt 5 L     &mt RCTRL MINUS
 &mt LEFT_SHIFT Z  &kp X   &kp C         &kp V                   &kp B  &msc SCRL_UP        &none       &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SEMICOLON
 &trans            &trans  &kp LEFT_ALT  &mt LEFT_COMMAND LANG2  &mo 2  &lt 3 SPACE         &mo 1       &lt 3 LANG1                                &screenshot
             >;
@@ -216,8 +215,8 @@
         MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &macro_left_click  &mo 5   &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
