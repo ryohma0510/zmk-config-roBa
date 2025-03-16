@@ -24,54 +24,6 @@
             layers = <0>;
         };
 
-        single_quote {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <7 8>;
-            layers = <2>;
-        };
-
-        double_quote {
-            bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <19 20>;
-            layers = <2>;
-        };
-
-        back_quote {
-            bindings = <&kp GRAVE>;
-            key-positions = <31 32>;
-            layers = <2>;
-        };
-
-        brackets {
-            bindings = <&brackets>;
-            key-positions = <12 11>;
-            layers = <2>;
-        };
-
-        parenthesis {
-            bindings = <&parenthesis>;
-            key-positions = <2 1>;
-            layers = <2>;
-        };
-
-        braces {
-            bindings = <&braces>;
-            key-positions = <24 23>;
-            layers = <2>;
-        };
-
-        lgts {
-            bindings = <&lgts>;
-            key-positions = <36 35>;
-            layers = <2>;
-        };
-
-        bracket {
-            bindings = <&bracket>;
-            key-positions = <11 10>;
-            layers = <2>;
-        };
-
         tab {
             bindings = <&kp TAB>;
             key-positions = <11 12>;
@@ -86,46 +38,11 @@
             label = "TO_LAYER_0";
         };
 
-        brackets: brackets {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp RIGHT_BRACKET>;
-            label = "BRACKETS";
-        };
-
-        braces: braces {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE>;
-            label = "BRACES";
-        };
-
-        parenthesis: parthens {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_PARENTHESIS &kp RIGHT_PARENTHESIS>;
-            label = "PARTHENS";
-        };
-
-        lgts: lgts {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LESS_THAN &kp GREATER_THAN>;
-            label = "LGTS";
-        };
-
         cmd_space: cmd_space {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LG(SPACE)>;
             label = "CMD_SPACE";
-        };
-
-        bracket: bracket {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LANG2 &kp LEFT_BRACKET>;
-            label = "BRACKET";
         };
 
         screenshot: screenshot {
@@ -177,7 +94,7 @@
 &kp Q             &kp W   &kp E         &kp R                   &kp T                                  &kp Y        &kp U    &kp I      &kp O       &kp P
 &mt LCTRL A       &kp S   &kp D         &kp F                   &kp G  &msc SCRL_DOWN      &cmd_space  &kp H        &lt 5 J  &lt 4 K    &kp L       &mt RCTRL MINUS
 &mt LEFT_SHIFT Z  &kp X   &kp C         &kp V                   &kp B  &msc SCRL_UP        &none       &kp N        &kp M    &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SEMICOLON
-&trans            &trans  &kp LEFT_ALT  &mt LEFT_COMMAND LANG2  &mo 2  &lt 3 SPACE         &mo 1       &lt 3 LANG1                                  &screenshot
+&trans            &trans  &kp LEFT_ALT  &mt LEFT_COMMAND LANG2  &mo 2  &lt 6 SPACE         &mo 1       &lt 3 LANG1                                  &screenshot
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -230,12 +147,12 @@
             >;
         };
 
-        layer_6 {
+        PAIR {
             bindings = <
-&trans  &trans        &trans        &trans        &trans                           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
-&trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+&trans  &kp LS(LPAR)  &kp LS(RPAR)  &trans  &trans                           &trans  &trans   &trans       &trans     &trans
+&trans  &kp LS(LBRC)  &kp LS(RBRC)  &trans  &trans  &trans      &trans       &trans  &kp SQT  &kp LS(DQT)  &kp GRAVE  &trans
+&trans  &kp LBKT      &kp RBKT      &trans  &trans  &trans      &bootloader  &trans  &trans   &trans       &trans     &trans
+&trans  &kp LS(LT)    &kp LS(GT)    &trans  &trans  &trans      &trans       &trans                                   &trans
             >;
         };
     };
