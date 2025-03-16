@@ -203,10 +203,10 @@
 
         ARROW {
             bindings = <
-&trans  &trans    &trans    &trans     &trans                                 &trans         &kp C_AC_BACK    &trans    &kp C_AC_FORWARD      &trans
-&trans  &kp LEFT  &kp UP    &kp RIGHT  &trans  &kp C_VOLUME_UP        &trans  &kp BACKSPACE  &kp LEFT         &kp UP    &kp RIGHT             &trans
-&trans  &trans    &kp DOWN  &trans     &trans  &kp C_VOLUME_DOWN      &trans  &trans         &kp LC(LS(TAB))  &kp DOWN  &kp LG(C_AC_FORWARD)  &trans
-&trans  &trans    &trans    &trans     &trans  &kp ENTER              &trans  &trans                                                          &trans
+&trans  &trans    &trans    &trans     &trans                                 &trans         &kp C_AC_BACK    &trans    &kp C_AC_FORWARD  &trans
+&trans  &kp LEFT  &kp UP    &kp RIGHT  &trans  &kp C_VOLUME_UP        &trans  &kp BACKSPACE  &kp LEFT         &kp UP    &kp RIGHT         &trans
+&trans  &trans    &kp DOWN  &trans     &trans  &kp C_VOLUME_DOWN      &trans  &trans         &kp LC(LS(TAB))  &kp DOWN  &kp LC(TAB)       &trans
+&trans  &trans    &trans    &trans     &trans  &kp ENTER              &trans  &trans                                                      &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
