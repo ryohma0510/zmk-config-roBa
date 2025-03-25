@@ -94,7 +94,7 @@
 &kp Q             &kp W   &kp E         &kp R                   &kp T                                  &kp Y        &kp U    &kp I      &kp O       &kp P
 &mt LCTRL A       &kp S   &kp D         &kp F                   &kp G  &msc SCRL_DOWN      &cmd_space  &kp H        &lt 5 J  &lt 4 K    &kp L       &mt RCTRL MINUS
 &mt LEFT_SHIFT Z  &kp X   &kp C         &kp V                   &kp B  &msc SCRL_UP        &none       &kp N        &kp M    &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SEMICOLON
-&trans            &trans  &kp LEFT_ALT  &mt LEFT_COMMAND LANG2  &mo 2  &lt 6 SPACE         &mo 1       &lt 3 LANG1                                  &screenshot
+&trans            &trans  &kp LEFT_ALT  &mt LEFT_COMMAND LANG2  &mo 2  &kp SPACE           &mo 1       &lt 3 LANG1                                  &screenshot
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -111,10 +111,10 @@
 
         SYM {
             bindings = <
-&trans  &trans    &trans     &trans                &kp TILDE                                  &trans            &trans             &kp QUESTION  &kp EXCLAMATION  &kp PERCENT
-&kp AT  &kp HASH  &kp DLLR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans      &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH     &kp PIPE         &kp BACKSLASH
-&trans  &trans    &kp CARET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans      &trans  &kp LESS_THAN     &kp GREATER_THAN   &trans        &kp AMPERSAND    &trans
-&trans  &trans    &trans     &trans                &trans                 &trans      &trans  &trans                                                              &trans
+&kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp GRAVE  &trans                &kp TILDE                                  &trans            &trans             &kp QUESTION  &kp EXCLAMATION  &kp PERCENT
+&kp AT            &kp HASH           &kp DLLR   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans      &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SLASH     &kp PIPE         &kp BACKSLASH
+&trans            &trans             &kp CARET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans      &trans  &kp LESS_THAN     &kp GREATER_THAN   &trans        &kp AMPERSAND    &trans
+&trans            &trans             &trans     &trans                &trans                 &trans      &trans  &trans                                                              &trans
             >;
         };
 
