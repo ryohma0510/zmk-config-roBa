@@ -66,6 +66,13 @@
 
             label = "MACRO_LEFT_CLICK";
         };
+
+        double_click: double_click {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB1 &mkp MB1>;
+            label = "DOUBLE_CLICK";
+        };
     };
 
     behaviors {
@@ -89,7 +96,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LEFT_CLICK";
             #binding-cells = <0>;
-            bindings = <&lt 5 J>, <&mkp MB1>;
+            bindings = <&lt 5 J>, <&mkp MB1>, <&double_click>;
         };
 
         right_click: right_click {
