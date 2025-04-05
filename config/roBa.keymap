@@ -96,7 +96,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "RIGHT_CLICK";
             #binding-cells = <0>;
-            bindings = <&kp K>, <&mkp MB2>;
+            bindings = <&kp L>, <&mkp MB2>;
         };
     };
 
@@ -105,10 +105,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W   &kp E         &kp R                   &kp T                                  &kp Y        &kp U        &kp I         &kp O       &kp P
-&mt LCTRL A       &kp S   &kp D         &kp F                   &kp G  &msc SCRL_DOWN      &cmd_space  &kp H        &left_click  &right_click  &kp L       &mt RCTRL MINUS
-&mt LEFT_SHIFT Z  &kp X   &kp C         &kp V                   &kp B  &msc SCRL_UP        &none       &kp N        &lt 5 M      &kp COMMA     &kp PERIOD  &mt RIGHT_SHIFT SINGLE_QUOTE
-&trans            &trans  &kp LEFT_ALT  &mt LEFT_COMMAND LANG2  &mo 2  &kp SPACE           &mo 1       &lt 3 LANG1                                         &kp GRAVE
+&kp Q             &kp W   &kp E         &kp R                   &kp T                                  &kp Y        &kp U        &kp I      &kp O         &kp P
+&mt LCTRL A       &kp S   &kp D         &kp F                   &kp G  &msc SCRL_DOWN      &cmd_space  &kp H        &left_click  &kp K      &right_click  &mt RCTRL MINUS
+&mt LEFT_SHIFT Z  &kp X   &kp C         &kp V                   &kp B  &msc SCRL_UP        &none       &kp N        &lt 5 M      &kp COMMA  &kp PERIOD    &mt RIGHT_SHIFT SINGLE_QUOTE
+&trans            &trans  &kp LEFT_ALT  &mt LEFT_COMMAND LANG2  &mo 2  &kp SPACE           &mo 1       &lt 3 LANG1                                        &kp GRAVE
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
