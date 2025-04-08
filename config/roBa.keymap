@@ -96,7 +96,7 @@
         left_click_to_mouse: left_click_to_mouse {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mkp MB1 &sl 4>;
+            bindings = <&mkp MB1 &to 4>;
             label = "LEFT_CLICK_TO_MOUSE";
         };
     };
