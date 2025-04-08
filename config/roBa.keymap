@@ -93,10 +93,10 @@
             label = "ZERO_AND_LANG1";
         };
 
-        left_click_to_layer0: left_click_to_layer0 {
+        left_click_to_mouse: left_click_to_layer0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mkp MB1 &sl 0>;
+            bindings = <&mkp MB1 &sl 4>;
             label = "LEFT_CLICK_TO_LAYER0";
         };
     };
@@ -122,7 +122,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LEFT_CLICK";
             #binding-cells = <0>;
-            bindings = <&kp J>, <&left_click_to_layer0>, <&double_click>;
+            bindings = <&kp J>, <&left_click_to_mouse>, <&double_click>;
         };
 
         special_lang2: special_lang2 {
