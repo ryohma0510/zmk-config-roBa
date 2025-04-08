@@ -92,6 +92,13 @@
             bindings = <&to 0 &kp LANG1>;
             label = "ZERO_AND_LANG1";
         };
+
+        left_click_to_layer0: left_click_to_layer0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mkp MB1 &to 0>;
+            label = "LEFT_CLICK_TO_LAYER0";
+        };
     };
 
     behaviors {
@@ -115,7 +122,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "LEFT_CLICK";
             #binding-cells = <0>;
-            bindings = <&lt 5 J>, <&mkp MB1>, <&double_click>;
+            bindings = <&kp J>, <&left_click_to_layer0>, <&double_click>;
         };
 
         special_lang2: special_lang2 {
@@ -143,8 +150,8 @@
         default_layer {
             bindings = <
 &kp Q             &kp W   &kp E         &kp R                          &kp T                             &kp Y               &kp U        &kp I      &kp O       &kp P
-&mt LCTRL A       &kp S   &kp D         &kp F                          &kp G  &msc SCRL_DOWN      &to 4  &kp H               &left_click  &kp K      &kp L       &mt RCTRL MINUS
-&mt LEFT_SHIFT Z  &kp X   &kp C         &kp V                          &kp B  &msc SCRL_UP        &none  &kp N               &kp M        &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SINGLE_QUOTE
+&mt LCTRL A       &kp S   &kp D         &kp F                          &kp G  &msc SCRL_DOWN      &none  &kp H               &left_click  &kp K      &kp L       &mt RCTRL MINUS
+&mt LEFT_SHIFT Z  &kp X   &kp C         &kp V                          &kp B  &msc SCRL_UP        &none  &kp N               &lt 5 M      &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SINGLE_QUOTE
 &trans            &trans  &kp LEFT_ALT  &special_lang2 LEFT_COMMAND 0  &mo 2  &kp SPACE           &mo 1  &special_lang1 3 0                                      &kp GRAVE
             >;
 
@@ -184,7 +191,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mo 5     &trans  &trans    &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
