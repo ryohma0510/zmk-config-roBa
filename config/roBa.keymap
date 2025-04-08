@@ -93,11 +93,11 @@
             label = "ZERO_AND_LANG1";
         };
 
-        left_click_to_mouse: left_click_to_layer0 {
+        left_click_to_mouse: left_click_to_mouse {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&mkp MB1 &sl 4>;
-            label = "LEFT_CLICK_TO_LAYER0";
+            label = "LEFT_CLICK_TO_MOUSE";
         };
     };
 
