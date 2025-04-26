@@ -12,8 +12,6 @@
     quick-tap-ms = <0>;
 };
 
-&sl { release-after-ms = <180>; };
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -51,49 +49,6 @@
             #binding-cells = <0>;
             bindings = <&kp LS(LG(NUMBER_4))>;
             label = "SCREENSHOT";
-        };
-    };
-
-    behaviors {
-        lt_to_layer_0: lt_to_layer_0 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LAYER_TAP_TO_0";
-            bindings = <&mo>, <&to_layer_0>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        tog_off: toggle_layer_off_only {
-            compatible = "zmk,behavior-toggle-layer";
-            #binding-cells = <1>;
-            display-name = "Toggle Layer Off";
-            toggle-mode = "off";
-        };
-
-        left_click: left_click {
-            compatible = "zmk,behavior-tap-dance";
-            label = "LEFT_CLICK";
-            #binding-cells = <0>;
-            bindings = <&kp J>, <&left_click_to_mouse>, <&double_click>;
-        };
-
-        special_lang2: special_lang2 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SPECIAL_LANG2";
-            bindings = <&kp>, <&zero_and_lang2>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-        };
-
-        special_lang1: special_lang1 {
-            compatible = "zmk,behavior-hold-tap";
-            label = "SPECIAL_LANG1";
-            #binding-cells = <2>;
-            bindings = <&mo>, <&zero_and_lang1>;
-
-            tapping-term-ms = <200>;
         };
     };
 
