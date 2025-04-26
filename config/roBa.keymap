@@ -159,10 +159,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W   &kp E         &kp R                   &kp T                             &kp Y        &kp U     &kp I      &kp O       &kp P
-&mt LCTRL A       &kp S   &kp D         &kp F                   &kp G  &msc SCRL_DOWN      &none  &kp H        &mkp MB1  &kp K      &kp L       &mt RCTRL J
-&mt LEFT_SHIFT Z  &kp X   &kp C         &kp V                   &kp B  &msc SCRL_UP        &none  &kp N        &lt 5 M   &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT MINUS
-&trans            &trans  &kp LEFT_ALT  &mt LEFT_COMMAND LANG2  &mo 2  &kp SPACE           &mo 1  &lt 3 LANG1                                   &none
+&kp Q             &kp W   &kp E         &kp R                   &kp T                        &kp Y        &kp U     &kp I      &kp O       &kp P
+&mt LCTRL A       &kp S   &kp D         &kp F                   &kp G  &none          &none  &kp H        &mkp MB1  &kp K      &kp L       &mt RCTRL J
+&mt LEFT_SHIFT Z  &kp X   &kp C         &kp V                   &kp B  &none          &none  &kp N        &lt 5 M   &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT MINUS
+&trans            &trans  &kp LEFT_ALT  &mt LEFT_COMMAND LANG2  &mo 2  &kp SPACE      &mo 2  &lt 3 LANG1                                   &screenshot
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
