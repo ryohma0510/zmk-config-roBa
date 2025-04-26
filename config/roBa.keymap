@@ -170,10 +170,10 @@
 
         NUM_BLE {
             bindings = <
-&kp KP_MULTIPLY  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS                            &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS  &kp PERCENT      &trans  &trans        &trans        &trans        &trans        &trans
-&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL  &kp KP_DOT       &trans  &trans        &trans        &trans        &trans        &trans
-&trans           &trans           &trans           &trans           &trans        &trans           &trans  &trans                                                  &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans                      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                  &bt BT_CLR
             >;
         };
 
@@ -188,10 +188,10 @@
 
         ARROW {
             bindings = <
-&trans  &trans    &trans    &trans     &trans                                 &trans         &mkp MB4         &trans    &mkp MB5     &trans
-&trans  &kp LEFT  &kp UP    &kp RIGHT  &trans  &kp C_VOLUME_UP        &trans  &kp BACKSPACE  &kp LEFT         &kp UP    &kp RIGHT    &trans
-&trans  &trans    &kp DOWN  &trans     &trans  &kp C_VOLUME_DOWN      &trans  &trans         &kp LC(LS(TAB))  &kp DOWN  &kp LC(TAB)  &trans
-&trans  &trans    &trans    &trans     &trans  &kp ENTER              &trans  &trans                                                 &trans
+&kp KP_MULTIPLY  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS                            &trans         &mkp MB4         &trans    &mkp MB5     &trans
+&kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS  &kp PERCENT      &trans  &kp BACKSPACE  &kp LEFT         &kp UP    &kp RIGHT    &trans
+&kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL  &kp KP_DOT       &trans  &trans         &kp LC(LS(TAB))  &kp DOWN  &kp LC(TAB)  &trans
+&trans           &trans           &trans           &trans           &trans        &trans           &trans  &trans                                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
