@@ -89,7 +89,7 @@
 &kp KP_MULTIPLY  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS                            &trans         &mkp MB4         &trans    &mkp MB5     &bt BT_SEL 0
 &kp KP_DIVIDE    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS  &kp PERCENT      &trans  &kp BACKSPACE  &kp LEFT         &kp UP    &kp RIGHT    &trans
 &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL  &kp KP_DOT       &trans  &trans         &kp LC(LS(TAB))  &kp DOWN  &kp LC(TAB)  &trans
-&trans           &trans           &trans           &trans           &trans        &trans           &trans  &trans                                                 &bt BT_SEL 4
+&trans           &trans           &trans           &trans           &trans        &kp ENTER        &trans  &trans                                                 &bt BT_SEL 4
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
