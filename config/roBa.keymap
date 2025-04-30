@@ -14,7 +14,7 @@
     quick-tap-ms = <0>;
 };
 
-&pmw3610_input_listener {
+&trackball_listener {
     set_mouse_slow {
         layers = <MOUSESLOW>;
         input-processors = <&zip_xy_scaler 1 3>;
