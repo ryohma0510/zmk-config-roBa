@@ -131,7 +131,7 @@
             >;
         };
 
-        MOUSE_SLOW {
+        MOUSESLOW {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
