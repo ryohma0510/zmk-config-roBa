@@ -14,10 +14,10 @@
     quick-tap-ms = <0>;
 };
 
-&mmv_input_listener {
+&pmw3610_input_listener {
     set_mouse_slow {
         layers = <MOUSESLOW>;
-        input-processors = <&zip_xy_scaler 1 2>;
+        input-processors = <&zip_xy_scaler 1 3>;
     };
 };
 
