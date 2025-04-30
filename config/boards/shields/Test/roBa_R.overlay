@@ -1,5 +1,7 @@
 #include "roBa.dtsi"
 
+#define MOUSESLOW 7
+
 &default_transform {
     col-offset = <6>;
 };
