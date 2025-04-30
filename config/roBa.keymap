@@ -14,13 +14,6 @@
     quick-tap-ms = <0>;
 };
 
-&trackball_listener {
-    set_mouse_slow {
-        layers = <MOUSESLOW>;
-        input-processors = <&zip_xy_scaler 1 3>;
-    };
-};
-
 / {
     combos {
         compatible = "zmk,combos";

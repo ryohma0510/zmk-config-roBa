@@ -19,6 +19,10 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
+        set_mouse_slow {
+            layers = <MOUSESLOW>;
+            input-processors = <&zip_xy_scaler 1 3>;
+        };
     };
 };
 
