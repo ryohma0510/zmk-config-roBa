@@ -6,10 +6,18 @@
 #define MOUSE 4
 #define SCROLL 5
 #define NUM 6
+#define MOUSESLOW 7
 
 &mt {
     flavor = "balanced";
     quick-tap-ms = <0>;
+};
+
+&mmv_input_listener {
+    set_mouse_slow {
+        layers = <MOUSESLOW>;
+        input-processors = <&zip_xy_scaler 1 2>;
+    };
 };
 
 / {
@@ -119,6 +127,15 @@
 &trans  &kp LS(LBRC)  &kp LS(RBRC)  &trans  &trans  &trans      &trans       &trans  &kp SQT  &kp LS(DQT)  &kp GRAVE  &trans
 &trans  &kp LBKT      &kp RBKT      &trans  &trans  &trans      &bootloader  &trans  &trans   &trans       &trans     &trans
 &trans  &kp LS(LT)    &kp LS(GT)    &trans  &trans  &trans      &trans       &trans                                   &trans
+            >;
+        };
+
+        MOUSE_SLOW {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
     };
