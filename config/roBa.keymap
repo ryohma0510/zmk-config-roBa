@@ -56,7 +56,7 @@
         alt_cmd: alt_cmd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT &kp LEFT_COMMAND>;
+            bindings = <&kp LG(LEFT_ALT)>;
             label = "ALT_CMD";
         };
     };
