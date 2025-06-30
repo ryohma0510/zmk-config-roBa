@@ -52,6 +52,13 @@
             bindings = <&kp LS(LG(NUMBER_4))>;
             label = "SCREENSHOT";
         };
+
+        alt_cmd: alt_cmd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp LEFT_COMMAND>;
+            label = "ALT_CMD";
+        };
     };
 
     keymap {
@@ -59,10 +66,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W   &kp E         &kp R                   &kp T                          &kp Y        &kp U     &kp I      &kp O       &kp P
-&mt LCTRL A       &kp S   &kp D         &lt 7 F                 &lt 5 G  &none          &none  &kp H        &mkp MB1  &kp K      &kp L       &mt RCTRL J
-&mt LEFT_SHIFT Z  &kp X   &kp C         &kp V                   &kp B    &none          &none  &kp N        &lt 5 M   &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT MINUS
-&trans            &trans  &kp LEFT_ALT  &mt LEFT_COMMAND LANG2  &mo 7    &kp SPACE      &mo 2  &lt 3 LANG1                                   &screenshot
+&kp Q             &kp W   &kp E         &kp R                   &kp T                           &kp Y        &kp U     &kp I      &kp O       &kp P
+&mt LCTRL A       &kp S   &kp D         &lt 7 F                 &lt 5 G   &none          &none  &kp H        &mkp MB1  &kp K      &kp L       &mt RCTRL J
+&mt LEFT_SHIFT Z  &kp X   &kp C         &kp V                   &kp B     &none          &none  &kp N        &lt 5 M   &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT MINUS
+&trans            &trans  &kp LEFT_ALT  &mt LEFT_COMMAND LANG2  &alt_cmd  &kp SPACE      &mo 2  &lt 3 LANG1                                   &screenshot
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
