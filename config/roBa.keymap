@@ -59,6 +59,13 @@
             bindings = <&kp LG(LEFT_ALT)>;
             label = "ALT_CMD";
         };
+
+        aqu: aqu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp Q &kp U>;
+            label = "AQU";
+        };
     };
 
     keymap {
